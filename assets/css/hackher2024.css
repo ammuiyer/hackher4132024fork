@@ -101,7 +101,7 @@ a.icon-nav:hover{
 }
 
 .custom-nav{
-    background-color: #fff;
+    background: linear-gradient(white, transparent 50%);
     color: #000;
 }
 
@@ -473,6 +473,13 @@ input[type=text]:focus, input[type=email]:focus {
   /* display: inline-block; */
 }
 
+.whitetransitionbg{
+  /*background: linear-gradient(rgb(255,255,255), rgba(85, 86, 132, 0));*/
+  background-color: #561f1f;
+  padding: 5%;
+  /* display: inline-block; */
+}
+
 .whitebg-heading{
   font-size: 2em;
   color: #56b8b8;
@@ -485,6 +492,7 @@ input[type=text]:focus, input[type=email]:focus {
   text-align: center;
   font-family: 'News Cycle';
   font-size: 1.2em;
+
 }
 
 .whitebgBLUETXT-para{
