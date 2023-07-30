@@ -15,7 +15,7 @@ var hexagons = [];
 
 var s3p3 = Math.sqrt(3);
 
-var h = 175;
+var h = 185;
 
 var decreasing_flag = false;
 
@@ -65,20 +65,20 @@ function loop() {
 
 		}
 		if(changing_colors) {
-			ctx.shadowColor = ctx.strokeStyle = 'hsl(' + h + ', 100%, 50%)';
-			if(h<230 && decreasing_flag==false){
+			ctx.shadowColor = ctx.strokeStyle = 'hsl(' + h + ', 100%, 60%)';
+			if(h<210 && decreasing_flag==false){
 				h+=changing_colors_speed;
 
 			}
-			else if (h>=230 && decreasing_flag==false){
+			else if (h>=210 && decreasing_flag==false){
 				decreasing_flag = true;
 				h-=changing_colors_speed;
 			}
-			else if(h>175 && decreasing_flag==true){
+			else if(h>185 && decreasing_flag==true){
 				h-=changing_colors_speed;
 
 			}
-			else if(h<=175 && decreasing_flag == true){
+			else if(h<=185 && decreasing_flag == true){
 				decreasing_flag = false;
 				//h+=changing_colors_speed;
 			};
@@ -93,7 +93,7 @@ function loop() {
 			drawHexagonPath(i);
 			
 			if(changing_colors)
-				ctx.shadowColor = ctx.strokeStyle = 'hsl(' + h + ', 100%, 50%)';
+				ctx.shadowColor = ctx.strokeStyle = 'hsl(' + h + ', 100%, 100%)';
 			else
 				ctx.shadowColor = ctx.strokeStyle = hexagon_color;
 			

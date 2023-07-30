@@ -474,8 +474,8 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 .whitetransitionbg{
-  /*background: linear-gradient(rgb(255,255,255), rgba(85, 86, 132, 0));*/
-  background-color: #561f1f;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(69, 164, 155, 1));
+  
   padding: 5%;
   /* display: inline-block; */
 }
